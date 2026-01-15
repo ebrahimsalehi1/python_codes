@@ -1,25 +1,17 @@
 
-class User:
-    active: bool
-    balance: int
+model_config = {
+    "learning_rate":0.01,
+    "epochs":20
+}
 
-    def __init__(self,active: bool,balance: int):
-        self.active = active
-        self.balance = balance        
+print(model_config["epochs"],model_config["learning_rate"])
 
-# result = process_payment(User(True,2000),1900)
-# print(f"result={result}")
+from dataclasses import dataclass
 
-def process_payment(user: User,amount:int):
-    if user.active:
-        if amount > 0:
-            if user.balance >= amount:
-                return "Success"
-            else:
-                return "Insufficient funds"
-        else:
-            return "Invalid amount"
-    else:
-        return "User inactive"    
+@dataclass(frozen=True)
+class APIConfig:
+    learning_rate: float
+    epochs: int
 
-
+ai_config = APIConfig(learning_rate=10.1,epochs=20)   
+print(ai_config,(ai_config.epochs,ai_config.learning_rate)) 
