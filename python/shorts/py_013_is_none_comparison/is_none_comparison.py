@@ -6,4 +6,3 @@ if user == None:
 
 if user is None:
     print("No user found")
-
