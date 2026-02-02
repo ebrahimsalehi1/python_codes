@@ -1,0 +1,29 @@
+services:
+  database:
+    image: "mysql:8.0"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    volumes:
+      - ebrahim:/var/lib/mysql
+    profiles:
+      - mysql_database
+    ports:
+      - "3306:3306"
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+    depends_on:
+      database:
+        condition: service_healthy
+    profiles:
+      - backend_service
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+volumes:
+  ebrahim:
