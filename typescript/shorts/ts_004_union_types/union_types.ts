@@ -5,9 +5,9 @@ type Status =
 
 let status: Status = 'loading';
 
-// ❌ Error: pending is not 
+// ❌ Error: pending is not
 // assignable to type
-status = 'pending';
+// status = 'pending';
 
 // ✅ Success
 status = 'success';

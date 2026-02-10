@@ -13,4 +13,4 @@ car.model = 'Model Y';
 
 // ❌ Error: Can not assign to brand,
 // because it is a read-only property
-car.brand = 'BMW';
+// car.brand = 'BMW';

@@ -10,7 +10,6 @@ const user: User = {
   role: 'Dev',
 };
 
-type Admin = { name: string };
+// type Admin = { name: string };
 type Admin = { role: string };
 // ❌ Error: Duplicate identifier
-

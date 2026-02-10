@@ -8,8 +8,12 @@ with mysql.connector.connect(
     password="mypassword"
     ) as conn: 
         cur = conn.cursor()
-        cur.execute("SELECT NOW()")
+        user_id = 'id-1'
+        query = f"SELECT * from user where id='{user_id}'"
+        print(query)
+        cur.execute(query)
+        
         result = cur.fetchone()
         print("result",result)
-        cur.close()
 
+        cur.close()

@@ -9,6 +9,6 @@ type ButtonStyle = `${Size}-${Color}`;
 let buttonStyle: ButtonStyle =
   'large-green';
 
-// ❌ Error: 
-// value is not assignable to types  
-buttonStyle = 'red-small';
+// ❌ Error:
+// value is not assignable to types
+// buttonStyle = 'red-small';

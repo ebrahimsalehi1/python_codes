@@ -17,7 +17,7 @@ const b = {
 
 // ❌ Compile time: Cannot assign to 'b1'
 //    because it is a read-only property
-b.b1++;
+// b.b1++;
 
 // Comparing immutability approaches:
 // 1. Object.freeze() → Runtime protection
