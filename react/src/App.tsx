@@ -3,12 +3,9 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import { Button } from './Button';
-import { useLingui } from '@lingui/react/macro';
-import { msg } from '@lingui/core/macro';
 
 function App() {
   const [count, setCount] = useState(0);
-  const { i18n } = useLingui();
 
   return (
     <>
@@ -55,7 +52,6 @@ function App() {
         to learn more
       </p>
       {/* <Trans>Welcome to react</Trans> */}
-      {i18n._(msg`Welcome to react`)}
     </>
   );
 }
