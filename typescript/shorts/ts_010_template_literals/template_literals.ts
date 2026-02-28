@@ -1,3 +1,5 @@
+// Stop Using string for Everything! Use TypeScript's Template Literal Types
+
 type Size = 'small' | 'large';
 type Color = 'red' | 'green';
 

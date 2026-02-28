@@ -1,4 +1,4 @@
-
+# Stop writing nested if statements in Python! Use Guard Clauses instead.
 class User:
     is_active: bool
     balance: int

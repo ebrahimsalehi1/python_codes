@@ -1,3 +1,5 @@
+// Stop using { [key: string]: any } in TypeScript! Use Record instead.
+
 type UserMap = Record<number, string>;
 
 const users: UserMap = {
