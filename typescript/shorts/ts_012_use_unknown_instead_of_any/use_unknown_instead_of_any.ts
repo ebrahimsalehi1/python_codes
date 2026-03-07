@@ -1,3 +1,5 @@
+// Stop Using any in TypeScript
+
 type User = { name: string };
 
 function isUser(

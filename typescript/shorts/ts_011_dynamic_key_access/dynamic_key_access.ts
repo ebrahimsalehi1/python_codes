@@ -1,3 +1,5 @@
+// Stop Using Random Strings as Keys in TypeScript
+
 interface Car {
   brand: string;
   year: number;
