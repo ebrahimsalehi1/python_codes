@@ -1,3 +1,4 @@
+# Python: Stop writing unnecessary "if" checks! 🐍✨
 
 data = {}
 if "counts" not in data:

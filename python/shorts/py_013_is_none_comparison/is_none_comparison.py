@@ -1,3 +1,4 @@
+# Python: Stop using ==None in Python 🐍
 
 user = None
 

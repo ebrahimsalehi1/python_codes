@@ -1,3 +1,5 @@
+// Stop Using Plain Boolean Checks When You Need a Type Guard
+
 type Product = { name: string };
 function isProduct(
   value: unknown,
