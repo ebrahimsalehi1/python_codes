@@ -1,23 +1,5 @@
-import { AppDataSource } from "./data-source";
-import { User } from "./entity/User";
+// import { runTS001 } from "./topics/ts_001_new_to_typeorm";
+import { runTS002 } from "./topics/to_002_find_by";
 
-AppDataSource.initialize()
-  .then(async () => {
-
-    const user = new User();
-
-    user.firstName = "Ebrahim";
-    user.role = "developer";
-
-    await AppDataSource.manager.save(user);
-
-    const users = 
-    await AppDataSource.manager.find(User);
-
-    console.log("Loaded users: ", users);
-
-    console.log(
-      "Here you can setup and run express / fastify / any other framework."
-    );
-  })
-  .catch((error) => console.log(error));
+// runTS001();
+runTS002();
