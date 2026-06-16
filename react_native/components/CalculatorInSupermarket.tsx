@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { TextInput, Button, StyleSheet, Text } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
-export function Calculator() {
+export function CalculatorInSupermarket() {
   const [itemName, setItemName] = useState("Fleisch");
   const [priceText, setPriceText] = useState("");
   const [weightText, setWeightText] = useState("");
